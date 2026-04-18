@@ -9,13 +9,13 @@
 </p>
 
 > `Awsome-3D` 的目标不是堆砌链接，而是把 3D 相关的重要方向、开源工具、代表性任务与学习路线组织成一个清晰的入口，方便快速建立全局认知，并逐步沉淀成可检索、可维护的资料库。
+> 现阶段主要 focus 在 3DGen
 
 ## News｜项目进展
 
-- `2026-04-18`: 初始化仓库，补充首页 README 与 LICENSE。
-- `2026-04-18`: 明确仓库定位为 3D 方向的中文资料导航与开源项目索引。
+- `2026-04-18`: 仓库创建
 
-## (1) Start From Here｜从这里开始
+<!-- ## Start From Here｜从这里开始
 
 ### 仓库定位
 
@@ -31,85 +31,80 @@
 
 - 如果你是初学者，先看“研究版图”和“推荐起步工具”，建立全局地图。
 - 如果你已经在做研究，直接跳到对应方向，筛选工具、项目和数据集。
-- 如果你希望搭系统，优先关注工具链、数据格式、评测方式和工程实现。
+- 如果你希望搭系统，优先关注工具链、数据格式、评测方式和工程实现。 -->
 
-## (2) Research Map｜3D 研究版图
+## 目录
 
-### 2.1 3D Foundations｜基础能力
+- [Paper List](#paper-list)
+- [Model Architecture](#model-architecture)
+- [3DGen](#3dgen)
+- [独立 Paper List 文件](./paperlist.md#paper-list)
+- [常用算法](#common-algorithms)
+- [点云](#point-cloud)
+- [相机内外参](#camera-calibration-and-pose)
+- [其他](#misc-algorithms)
 
-- 多视图几何、相机模型、位姿估计、PnP、Bundle Adjustment。
-- 点云、体素、网格、SDF、NeRF、3DGS 等三维表示。
-- 渲染基础：Rasterization、Ray Marching、Differentiable Rendering。
+<a id="paper-list"></a>
+## Paper List
 
-### 2.2 3D Reconstruction｜三维重建
+完整可维护版本见 [paperlist.md](./paperlist.md#paper-list)。
 
-- 传统重建：SfM、MVS、TSDF、Poisson Surface Reconstruction。
-- 神经重建：NeRF 系列、Dynamic NeRF、Feed-forward Reconstruction。
-- 实时与工程化重建：SLAM、RGB-D Mapping、3DGS Real-time Rendering。
+<a id="model-architecture"></a>
+#### Model Architecture
 
-### 2.3 3D Generation｜三维生成
+以下是常用的模型架构相关文章，建议按时间顺序先把基础表征与生成范式补齐，再进入 3DGen。
 
-- Text-to-3D：从文本生成形状、外观或场景。
-- Image-to-3D：单图 / 多图三维重建与资产生成。
-- 3D Asset Generation：Mesh、Texture、Material、Avatar、Scene Layout。
+- [Transformer: Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+- [VAE: Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)
+- [ViT: An Image Is Worth 16x16 Words](https://arxiv.org/abs/2010.11929)
+- [DINO: Emerging Properties in Self-Supervised Vision Transformers](https://arxiv.org/abs/2104.14294)
+- [DINOv2: Learning Robust Visual Features without Supervision](https://arxiv.org/abs/2304.07193) | [Code](https://github.com/facebookresearch/dinov2)
+- [DINOv3](https://arxiv.org/abs/2508.10104) | [Code](https://github.com/facebookresearch/dinov3)
+- [DDPM: Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239)
+- [DDIM: Denoising Diffusion Implicit Models](https://arxiv.org/abs/2010.02502)
+- [Stable Diffusion / LDM: High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752)
+- [DiT: Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748)
+- [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747)
+- [3DShape2VecSet: A 3D Shape Representation for Neural Fields and Generative Diffusion Models](https://arxiv.org/abs/2301.11445) | [Project Page](https://1zb.github.io/3DShape2VecSet/) | [Code](https://github.com/1zb/3DShape2VecSet)
 
-### 2.4 3D Understanding｜三维理解
+<a id="3dgen"></a>
+#### 3DGen
 
-- 3D Detection、3D Segmentation、Pose Estimation、Tracking。
-- Scene Understanding：室内外场景解析、语义地图、开放词汇 3D 理解。
-- Vision-Language-3D：把语言和三维表示对齐，用于检索、问答和规划。
+从单张图像或文本出发得到三维资产的工作，这里统一归类为 3DGen。当前列表主要聚焦单物体生成。
 
-### 2.5 Embodied 3D｜具身与机器人
+- [CLAY: A Controllable Large-scale Generative Model for Creating High-quality 3D Assets](https://arxiv.org/abs/2406.13897)
+- [TRELLIS: Structured 3D Latents for Scalable and Versatile 3D Generation](https://arxiv.org/abs/2412.01506) | [Project Page](https://microsoft.github.io/TRELLIS/) | [Code](https://github.com/microsoft/TRELLIS)
+- [TRELLIS.2: Native and Compact Structured Latents for 3D Generation](https://arxiv.org/abs/2512.14692) | [Project Page](https://microsoft.github.io/TRELLIS.2) | [Code](https://github.com/microsoft/TRELLIS.2)
+- [Hunyuan3D-1.0: A Unified Framework for Text-to-3D and Image-to-3D Generation](https://arxiv.org/abs/2411.02293) | [Code](https://github.com/Tencent-Hunyuan/Hunyuan3D-1)
+- [Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation](https://arxiv.org/abs/2501.12202) | [Code](https://github.com/Tencent-Hunyuan/Hunyuan3D-2)
+- [Hunyuan3D 2.1: From Images to High-Fidelity 3D Assets with Production-Ready PBR Material](https://arxiv.org/abs/2506.15442) | [Code](https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1)
+- [SAM 3D: 3Dfy Anything in Images](https://arxiv.org/abs/2511.16624)
+- [CUPID: Generative 3D Reconstruction via Joint Object and Pose Modeling](https://arxiv.org/abs/2510.20776) | [Project Page](https://cupid3d.github.io/) | [Code](https://github.com/cupid3d/Cupid)
+- [Omni123: Exploring 3D Native Foundation Models with Limited 3D Data by Unifying Text to 2D and 3D Generation](https://arxiv.org/abs/2604.02289)
 
-- 面向机器人操作的三维感知、抓取、场景建模与几何推理。
-- 面向导航的 3D occupancy、语义地图、场景图与世界模型。
-- 面向仿真的 3D 场景构建、传感器建模与数据合成。
+<a id="common-algorithms"></a>
+## 常用算法
 
-### 2.6 Datasets & Benchmarks｜数据集与评测
+<a id="point-cloud"></a>
+### 点云
 
-- 室内外重建数据集。
-- 3D detection / segmentation 基准。
-- 具身操作与导航中的 3D 感知基准。
-- 大规模 3D 生成与资产评测基准。
+- [FPS / Farthest Point Sampling](https://arxiv.org/abs/1706.02413)
 
-## (3) Recommended Starting Points｜推荐起步工具
+<a id="camera-calibration-and-pose"></a>
+### 相机内外参
 
-下面这些项目适合作为 3D 工程与研究的起点：
+- [PnP 算法](https://docs.opencv.org/4.x/d5/d1f/calib3d_solvePnP.html) | [本仓库 notebook](./algorithm/pnp_solver.ipynb)
+- [Umeyama Method](https://zpl.fi/aligning-point-patterns-with-kabsch-umeyama-algorithm/)
 
-- [Open3D](https://github.com/isl-org/Open3D): 点云、配准、重建、可视化的通用工具库。
-- [PyTorch3D](https://github.com/facebookresearch/pytorch3d): 适合做可微渲染、几何学习和 3D 深度学习实验。
-- [COLMAP](https://github.com/colmap/colmap): 经典 SfM / MVS 基础设施，重建方向必备。
-- [nerfstudio](https://github.com/nerfstudio-project/nerfstudio): NeRF 研究与实验的高质量工程框架。
-- [gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting): 3D Gaussian Splatting 官方实现。
-- [MMDetection3D](https://github.com/open-mmlab/mmdetection3d): 3D 检测与感知任务的成熟训练框架。
-- [Kaolin](https://github.com/NVIDIAGameWorks/kaolin): NVIDIA 的 3D 深度学习工具库，适合生成与几何方向。
+<a id="misc-algorithms"></a>
+### 其他
 
-## (4) Scope Planning｜后续整理计划
+- [匈牙利匹配 / Hungarian Algorithm](https://en.wikipedia.org/wiki/Hungarian_algorithm)
 
-- [x] 初始化仓库首页。
-- [x] 补充开源许可证。
-- [ ] 增加 3D Vision / Reconstruction / Generation 专题条目。
-- [ ] 增加 Datasets / Benchmarks / Surveys 整理。
-- [ ] 增加面向 Python 用户的最小实践路线。
-- [ ] 整理 `paperlist.md`，形成可持续维护的论文索引。
 
-## (5) Contribution｜贡献方式
 
-欢迎通过以下方式一起维护这个仓库：
 
-- 提交 PR，补充高质量项目、教程、课程、数据集和综述。
-- 提交 issue，指出失效链接、分类问题或内容遗漏。
-- 如果你维护相关项目，也欢迎把仓库信息补充进来。
-
-建议补充内容时尽量包含：
-
-- 项目链接
-- 任务类型
-- 关键特点
-- 适用场景
-- 论文或主页
-
-## (6) License｜许可协议
+## License｜许可协议
 
 本仓库采用 [MIT License](./LICENSE)。
 
