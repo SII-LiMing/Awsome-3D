@@ -79,6 +79,7 @@
 - **[NeRF]** [NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis](https://arxiv.org/abs/2003.08934) | [Code](https://github.com/bmild/nerf)
 
 #### Reconstruction
+这里的重建指从多目输入恢复精细且一致的三维信息。
 - **[COLMAP]** [Structure-from-Motion Revisited](https://openaccess.thecvf.com/content_cvpr_2016/papers/Schonberger_Structure-From-Motion_Revisited_CVPR_2016_paper.pdf) | [Project Page](https://colmap.github.io/) | [Code](https://github.com/colmap/colmap)
 - **[VGGT]** [VGGT: Visual Geometry Grounded Transformer](https://arxiv.org/abs/2503.11651) | [Project Page](https://vgg-t.github.io/) | [Code](https://github.com/facebookresearch/vggt)
 
