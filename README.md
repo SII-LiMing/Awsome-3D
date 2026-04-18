@@ -73,6 +73,7 @@
 - **[Omni123]** [Exploring 3D Native Foundation Models with Limited 3D Data by Unifying Text to 2D and 3D Generation](https://arxiv.org/abs/2604.02289)
 
 #### 3DGS
+能够精细地重建物体或者场景的外观，但是可编辑性和可操作性较差。
 - **[3DGS]** [3D Gaussian Splatting for Real-Time Radiance Field Rendering](https://arxiv.org/abs/2308.04079) | [Project Page](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/) | [Code](https://github.com/graphdeco-inria/gaussian-splatting)
 
 #### NeRF
