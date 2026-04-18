@@ -37,6 +37,7 @@
 
 - [Paper List](#paper-list)
 - [常用算法](#common-algorithms)
+- [会议和期刊](#conference-and-journal)
 
 <a id="paper-list"></a>
 ## Paper List
@@ -76,38 +77,6 @@
 - **[CUPID]** [Generative 3D Reconstruction via Joint Object and Pose Modeling](https://arxiv.org/abs/2510.20776) | [Project Page](https://cupid3d.github.io/) | [Code](https://github.com/cupid3d/Cupid)
 - **[Omni123]** [Exploring 3D Native Foundation Models with Limited 3D Data by Unifying Text to 2D and 3D Generation](https://arxiv.org/abs/2604.02289)
 
-#### Conferences
-
-> CCF 等级参考 [CCF 第七版（2026-03）在线检索](https://ccf.atom.im/)。下面的“分类”是为了方便快速筛选，不等同于 CCF 原始学科分类；这里只列常见且适合 3D 方向投稿的 venue。
-
-| Venue | 分类 | CCF | 适合的 3D 方向 | 简介 |
-| --- | --- | --- | --- | --- |
-| [CVPR](https://cvpr.thecvf.com/) | CV | A | 3D detection, reconstruction, generation | 年会，CV 旗舰会，3D 论文量很大。 |
-| [ICCV](https://iccv.thecvf.com/) | CV | A | 3D perception, geometry, generative 3D | 仅奇数年举办，与 CVPR 并列顶会。 |
-| [ECCV](https://eccv.ecva.net/) | CV | B | multi-view geometry, 3D understanding | 仅偶数年举办，欧洲 CV 旗舰会。 |
-| [3DV](https://3dvconf.github.io/2026/) | 3D Vision | C | reconstruction, pose, geometry, SLAM | 纯 3D 视觉会议，对口度很高。 |
-| [NeurIPS](https://neurips.cc/) | AI/ML | A | 3D foundation models, world models, generative 3D | 年会，偏方法创新与学习范式。 |
-| [ICLR](https://iclr.cc/) | AI/ML | A | representation learning, diffusion, 3D generation | 年会，偏表示学习与生成建模。 |
-| [ICML](https://icml.cc/) | AI/ML | A | large-scale learning, 3D generative modeling | 年会，偏机器学习方法本身。 |
-| [SIGGRAPH](https://www.siggraph.org/) | 图形学 | A | rendering, geometry, animation, asset creation | 年会，图形学旗舰，3D 资产与渲染工作集中。 |
-| [Eurographics](https://conferences.eg.org/) | 图形学 | B | geometry processing, rendering, animation | 年会，欧洲图形学旗舰，对 3D 几何较友好。 |
-| [IEEE VR](https://ieeevr.org/) | XR/3D交互 | A | 3D interaction, rendering, VR/AR systems | 年会，偏虚拟现实与 3D 用户交互。 |
-| [IEEE VIS](https://ieeevis.org/) | 可视化 | A | volume rendering, scientific visualization, geometry vis | 年会，偏可视化而非通用 CV。 |
-| [ISMAR](https://www.ismar.net/) | XR/AR | B | tracking, 3D reconstruction, scene understanding | 年会，偏 AR/MR 场景理解与交互。 |
-| [ICRA](https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra) | 机器人 | B | 3D perception, SLAM, manipulation | 年会，机器人旗舰会，感知和控制并重。 |
-| [IROS](https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros) | 机器人 | C | navigation, 3D perception, embodied systems | 年会，机器人范围更广，系统 work 较多。 |
-
-#### Journals
-
-| Venue | 分类 | CCF | 适合的 3D 方向 | 简介 |
-| --- | --- | --- | --- | --- |
-| [TPAMI](https://www.computer.org/csdl/journal/tp) | CV | A | 3D vision, recognition, learning | 视觉/模式识别顶刊，适合更完整的方法论文。 |
-| [IJCV](https://link.springer.com/journal/11263) | CV | A | multi-view geometry, 3D understanding, reconstruction | CV 顶刊，通常更强调完整故事和系统实验。 |
-| [TOG](https://dl.acm.org/journal/tog) | 图形学 | A | graphics, geometry, rendering, 3D generation | 图形学顶刊；SIGGRAPH/SIGGRAPH Asia 论文常与 TOG 发表体系相关。 |
-| [TVCG](https://www.computer.org/csdl/journal/tg) | 图形学/可视化/XR | A | visualization, XR, rendering, 3D interaction | 与 IEEE VIS / VR 社区联系紧密。 |
-| [CVIU](https://www.sciencedirect.com/journal/computer-vision-and-image-understanding) | CV | B | 3D vision, scene understanding, geometry | CV 老牌期刊，适合实验较完整的 3D 工作。 |
-| [TR](https://www.ieee-ras.org/publications/t-ro) | 机器人 | B | SLAM, 3D perception, manipulation, robot learning | 机器人代表期刊，偏系统与方法结合。 |
-
 <a id="common-algorithms"></a>
 ## 常用算法
 
@@ -126,6 +95,41 @@
 ### 其他
 
 - [匈牙利匹配 / Hungarian Algorithm](https://en.wikipedia.org/wiki/Hungarian_algorithm)
+
+<a id="conference-and-journal"></a>
+## 会议和期刊
+
+CCF 等级参考 [CCF 第七版（2026-03）在线检索](https://ccf.atom.im/)。下面的“分类”是为了方便快速筛选，不等同于 CCF 原始学科分类；这里只列常见且适合 3D 方向投稿的 venue。
+
+### Conferences
+
+| Venue | 分类 | CCF | 适合的 3D 方向 | 简介 |
+| --- | --- | --- | --- | --- |
+| [CVPR](https://cvpr.thecvf.com/) | CV | A | 3D detection, reconstruction, generation | 年会，CV 旗舰会，3D 论文量很大。 |
+| [ICCV](https://iccv.thecvf.com/) | CV | A | 3D perception, geometry, generative 3D | 仅奇数年举办，与 CVPR 并列顶会。 |
+| [ECCV](https://eccv.ecva.net/) | CV | B | multi-view geometry, 3D understanding | 仅偶数年举办，欧洲 CV 旗舰会。 |
+| [3DV](https://3dvconf.github.io/2026/) | 3D Vision | C | reconstruction, pose, geometry, SLAM | 纯 3D 视觉会议，对口度很高。 |
+| [NeurIPS](https://neurips.cc/) | AI/ML | A | 3D foundation models, world models, generative 3D | 年会，偏方法创新与学习范式。 |
+| [ICLR](https://iclr.cc/) | AI/ML | A | representation learning, diffusion, 3D generation | 年会，偏表示学习与生成建模。 |
+| [ICML](https://icml.cc/) | AI/ML | A | large-scale learning, 3D generative modeling | 年会，偏机器学习方法本身。 |
+| [SIGGRAPH](https://www.siggraph.org/) | 图形学 | A | rendering, geometry, animation, asset creation | 年会，图形学旗舰，3D 资产与渲染工作集中。 |
+| [Eurographics](https://conferences.eg.org/) | 图形学 | B | geometry processing, rendering, animation | 年会，欧洲图形学旗舰，对 3D 几何较友好。 |
+| [IEEE VR](https://ieeevr.org/) | XR/3D交互 | A | 3D interaction, rendering, VR/AR systems | 年会，偏虚拟现实与 3D 用户交互。 |
+| [IEEE VIS](https://ieeevis.org/) | 可视化 | A | volume rendering, scientific visualization, geometry vis | 年会，偏可视化而非通用 CV。 |
+| [ISMAR](https://www.ismar.net/) | XR/AR | B | tracking, 3D reconstruction, scene understanding | 年会，偏 AR/MR 场景理解与交互。 |
+| [ICRA](https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra) | 机器人 | B | 3D perception, SLAM, manipulation | 年会，机器人旗舰会，感知和控制并重。 |
+| [IROS](https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros) | 机器人 | C | navigation, 3D perception, embodied systems | 年会，机器人范围更广，系统 work 较多。 |
+
+### Journals
+
+| Venue | 分类 | CCF | 适合的 3D 方向 | 简介 |
+| --- | --- | --- | --- | --- |
+| [TPAMI](https://www.computer.org/csdl/journal/tp) | CV | A | 3D vision, recognition, learning | 视觉/模式识别顶刊，适合更完整的方法论文。 |
+| [IJCV](https://link.springer.com/journal/11263) | CV | A | multi-view geometry, 3D understanding, reconstruction | CV 顶刊，通常更强调完整故事和系统实验。 |
+| [TOG](https://dl.acm.org/journal/tog) | 图形学 | A | graphics, geometry, rendering, 3D generation | 图形学顶刊；SIGGRAPH/SIGGRAPH Asia 论文常与 TOG 发表体系相关。 |
+| [TVCG](https://www.computer.org/csdl/journal/tg) | 图形学/可视化/XR | A | visualization, XR, rendering, 3D interaction | 与 IEEE VIS / VR 社区联系紧密。 |
+| [CVIU](https://www.sciencedirect.com/journal/computer-vision-and-image-understanding) | CV | B | 3D vision, scene understanding, geometry | CV 老牌期刊，适合实验较完整的 3D 工作。 |
+| [TR](https://www.ieee-ras.org/publications/t-ro) | 机器人 | B | SLAM, 3D perception, manipulation, robot learning | 机器人代表期刊，偏系统与方法结合。 |
 
 ## License｜许可协议
 
