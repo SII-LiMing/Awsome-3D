@@ -89,7 +89,7 @@
 <a id="point-cloud"></a>
 #### 点云
 
-- [FPS / Farthest Point Sampling](https://arxiv.org/abs/1706.02413)
+- [Farthest Point Sampling(FPS)](https://arxiv.org/abs/1706.02413)
 
 <a id="camera-calibration-and-pose"></a>
 #### 相机内外参
@@ -100,7 +100,7 @@
 <a id="misc-algorithms"></a>
 #### 其他
 
-- [匈牙利匹配 / Hungarian Algorithm](https://en.wikipedia.org/wiki/Hungarian_algorithm)
+- [Hungarian Algorithm](https://en.wikipedia.org/wiki/Hungarian_algorithm)
 
 <a id="conference-and-journal"></a>
 ## 会议和期刊
