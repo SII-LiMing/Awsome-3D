@@ -1,6 +1,6 @@
 <h1 align="center">Awsome-3D</h1>
 
-<p align="center"><b>一个面向 3D 视觉、三维重建、3D 生成与具身感知的中文导航仓库</b></p>
+<!-- <p align="center"><b>一个面向 3D 视觉、三维重建、3D 生成与具身感知的中文导航仓库</b></p> -->
 
 <p align="center">
   <img src="https://img.shields.io/github/stars/SII-LiMing/Awsome-3D?style=flat-square" alt="GitHub stars" />
