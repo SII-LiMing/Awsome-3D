@@ -82,7 +82,7 @@
 - **[NeRF]** [NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis](https://arxiv.org/abs/2003.08934) | [Code](https://github.com/bmild/nerf)
 
 #### Reconstruction
-- **[COLMAP]** [Structure-from-Motion Revisited](https://openaccess.thecvf.com/content_cvpr_2016/html/Schoenberger_Structure-From-Motion_Revisited_CVPR_2016_paper.html) | [Project Page](https://colmap.github.io/) | [Code](https://github.com/colmap/colmap)
+- **[COLMAP]** [Structure-from-Motion Revisited](https://openaccess.thecvf.com/content_cvpr_2016/papers/Schonberger_Structure-From-Motion_Revisited_CVPR_2016_paper.pdf) | [Project Page](https://colmap.github.io/) | [Code](https://github.com/colmap/colmap)
 - **[VGGT]** [VGGT: Visual Geometry Grounded Transformer](https://arxiv.org/abs/2503.11651) | [Project Page](https://vgg-t.github.io/) | [Code](https://github.com/facebookresearch/vggt)
 
 <a id="common-algorithms"></a>
@@ -96,7 +96,7 @@
 <a id="camera-calibration-and-pose"></a>
 #### 相机内外参
 
-- [PnP 算法](./algorithm/pnp_solver.ipynb) 
+- [PnP algorithm](./algorithm/pnp_solver.ipynb) 
 - [Umeyama Method](https://zpl.fi/aligning-point-patterns-with-kabsch-umeyama-algorithm/)
 
 <a id="misc-algorithms"></a>
