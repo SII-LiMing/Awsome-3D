@@ -92,6 +92,10 @@
 
 - [Farthest Point Sampling(FPS)](https://arxiv.org/abs/1706.02413)
 
+#### Neural Field
+- [Marching Cubes](./algorithm/marching_cubes.py)
+
+
 <a id="camera-calibration-and-pose"></a>
 #### 相机内外参
 
@@ -144,7 +148,7 @@ CCF 等级参考 [CCF 第七版（2026-03）](https://ccf.atom.im/)。这里只�
 - [WAIC](https://www.worldaic.com.cn/)：世界人工智能大会，偏学术与产业结合。
 - [GDC](https://gdconf.com/)：游戏开发者大会。
 
-#### 优秀研究者
+<!-- #### 优秀研究者
 - [Jingyi Yu](https://www.yu-jingyi.com/)
 - [Daniel Cohen-Or](https://danielcohenor.com/)
 - [Michael J. Black](https://is.mpg.de/person/michael-black). SMPL，马普所。
@@ -153,7 +157,7 @@ CCF 等级参考 [CCF 第七版（2026-03）](https://ccf.atom.im/)。这里只�
 computer vision](https://www.vincentsitzmann.com/blog/bitter_lesson_of_cv/) 作者
 - [Qixing Huang](https://www.cs.utexas.edu/~huangqx/)
 - [Sida Peng](https://pengsida.net/)
-- [Xiaoguang Han](https://i.cs.hku.hk/~xghan/)
+- [Xiaoguang Han](https://i.cs.hku.hk/~xghan/) -->
 
 #### 自媒体 / 资讯
 - [机器之心](https://www.jiqizhixin.com/)
